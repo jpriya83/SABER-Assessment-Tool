@@ -1,0 +1,182 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url("../IMAGES/Login_bg.png");
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center center; /* Center the image */
+}
+
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+header .logo-img {
+    width: 100px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home button specific styling */
+header .home-btn {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+header .home-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    text-decoration: none;
+}
+
+/* Login Container */
+main.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #0054a6;
+    background-color: #fff;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #003366;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #3572ae;
+}
+
+.forgot-password-link,
+.register-link {
+    margin-top: 15px;
+}
+
+.forgot-password-link a,
+.register-link a {
+    color: #0054a6;
+    text-decoration: none;
+}
+
+.forgot-password-link a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1; /* Ensures footer stays above other elements if needed */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Position the logo in the bottom right corner */
+footer .footer-logo {
+    position: absolute;
+    right: 50px; /* Adjust for spacing from the right */
+    bottom: 20px; /* Adjust for spacing from the bottom */
+    width: 80px;
+}
+

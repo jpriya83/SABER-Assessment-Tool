@@ -1,0 +1,247 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f7fc;
+    margin-top: 100px; /* Space for fixed header */
+    color: #333;
+    background-image: url(../IMAGES/Registration_bg.png);
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Optional: keeps the background fixed during scroll */
+    height: 100vh; /* Ensures the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header .header-content img {
+    width: 120px;  /* Increased logo size */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Home button styling */
+header nav ul li .home-btn {
+    background-color: green; /* Green background */
+    color: white;  /* White text color */
+    padding: 10px 20px; /* Padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size to match */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+header nav ul li .home-btn:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+
+/* Form container styling */
+.form-container {
+    max-width: 700px;
+    margin: 80px auto 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Form step styles */
+.form-step {
+    display: none;
+}
+
+input[type="radio"]:checked + .form-step {
+    display: block;
+}
+
+/* Hide radio button circles */
+input[type="radio"] {
+    display: none;
+}
+
+/* Label for each radio button - triggers showing the next step */
+input[type="radio"] + label {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #003366;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Focus state for input fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #003366;
+    background-color: #fff;
+}
+
+/* Step label styles */
+.form-step label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #003366;
+}
+/* Button styles */
+.next-btn,
+.register-btn {
+    display: inline-block;
+    background-color: transparent; /* Remove background color */
+    color: #003366; /* Set text color to dark blue for contrast */
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    text-align: center; /* Ensure text is centered */
+    border: 2px solid #003366; /* Border color */
+}
+
+/* Hover state for buttons */
+.next-btn:hover
+{
+    background-color: #fff; /* No background on hover */
+    color: #00509e; /* Change text color to lighter blue on hover */
+}
+
+.register-btn:hover {
+    background-color: #00509e; /* Lighter blue on hover */
+    color: white; /* Ensure text stays white on hover */
+}
+
+/* Register button special styling */
+.register-btn {
+    font-weight: 600;
+}
+
+/* Fix background for buttons */
+.next-btn {
+    background-color: transparent; /* Transparent background for normal state */
+    color: #003366; /* Text color dark blue */
+    border: 2px solid #003366; /* Border color dark blue */
+}
+
+.register-btn {
+    background-color: transparent; /* Transparent background for normal state */
+    color: #003366; /* Text color dark blue */
+    border: 2px solid #003366; /* Border color dark blue */
+}
+
+/* Additional spacing for password fields */
+input[type="password"] {
+    margin-bottom: 25px; /* Add more space below password fields */
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1; /* Ensures footer stays above other elements if needed */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Position the logo in the bottom right corner */
+footer .footer-logo {
+    position: absolute;
+    right: 50px; /* Adjust for spacing from the right */
+    bottom: 20px; /* Adjust for spacing from the bottom */
+    width: 80px;
+}
+

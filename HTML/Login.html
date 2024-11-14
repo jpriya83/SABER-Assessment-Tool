@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="icon" href="../IMAGES/Logo.png" type="image/x-icon">
+    <link rel="icon" href="../IMAGES/FavIcon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="../IMAGES/Logo.png" alt="Saber+ Logo" class="logo-img">
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="home-btn">Home</a></li> <!-- Link to the homepage -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <form class="login-form">
+            <h2>Login</h2>
+            <label for="username">Username <span style="color: red;">*</span></label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password <span style="color: red;">*</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+            <!-- Forgot Password Link below the button -->
+            <div class="forgot-password-link">
+                <p><a href="ForgotPassword.html">Forgot Password?</a></p>
+            </div>
+
+            <!-- Sign Up Link at the bottom -->
+            <div class="register-link">
+                <p>Not registered yet? <a href="Register.html">Register here</a></p> <!-- Link to Register page -->
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Saber+ Metrics, XYZ Towers, Andhra Pradesh, India.</p>
+        <img src="../IMAGES/Logo.png" alt="Saber+" class="footer-logo">
+    </footer>
+
+</body>
+</html>
